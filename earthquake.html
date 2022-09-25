@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <title>Earthquake Detection</title>
+  </head>
+  <body>
+    <nav class="navbar">
+      <div id="trapezoid">
+        <a href="index.html" class="expandHome">Home</a>
+        <a href="earthquake.html" class="expandHome">EarthQuake</a>
+        <a href="" class="expandHome">Hurricane</a>
+        <a href="" class="expandHome">Flood</a>
+        <a href="" class="expandHome">About</a>
+      </div>
+      <input
+        autocomplete="off"
+        id="search"
+        class="search"
+        type="text"
+        placeholder=" Search through list of quakes (e.g. Texas or 2.3)"
+      />
+    </nav>
+
+    <div id="form" class="wrapper">
+      <br />
+      <br />
+      <h1>Earthquake Detection</h1>
+      <br />
+      <div class="heading">
+        <input type="checkbox" class="toggle" id="toggle" />
+        <label for="toggle">
+          <span class="off" id="off">Recent Quakes</span>
+          <span class="on" id="on">Local Quakes</span>
+        </label>
+        <br />
+        <br />
+        <div class="getRecent" id="showRecentButton">
+          <h2>Earthquakes that happened in the past 24 hours</h2>
+          <br />
+          <button id="getRecent">Get information about recent quakes</button>
+        </div>
+        <div class="getLocation" id="showLocationButton" style="display: none">
+          <h2>Earthquakes that happened near me</h2>
+          <br />
+          <button id="getLocation">Get quakes near me</button>
+          <br />
+          <br />
+
+          <div id="locating" class="loc"></div>
+          <div id="locating2" class="loc"></div>
+          <div id="coordinates" class="coordinates"></div>
+          <br />
+          <a id="map" class="map"></a>
+        </div>
+      </div>
+    </div>
+    <div id="searchTerms" class="searchTerms populate">
+      <div class="postRecent" id="mostRecent"></div>
+      <div class="postLocation" id="fetchIt"></div>
+    </div>
+    <script>
+      function onButton() {
+        showRecentButton.style.display = "none";
+        showLocationButton.style.display = "block";
+        mostRecent.style.display = "none";
+        fetchIt.style.display = "block";
+      }
+      function offButton() {
+        showRecentButton.style.display = "block";
+        showLocationButton.style.display = "none";
+        mostRecent.style.display = "block";
+        fetchIt.style.display = "none";
+      }
+      off.addEventListener("click", onButton);
+      on.addEventListener("click", offButton);
+    </script>
+    <script src="recentQuakes.js"></script>
+    <script src="localQuakes.js"></script>
+    <script src="search.js"></script>
+  </body>
+</html>

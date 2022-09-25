@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+      crossorigin="anonymous"
+    />
+
+    <title>Earthquake Detection</title>
+  </head>
+  <body>
+    <nav class="navbar">
+      <div id="trapezoid">
+        <a href="index.html" class="expandHome">Home</a>
+        <a href="earthquake.html" class="expandHome">EarthQuake</a>
+        <a href="" class="expandHome">Hurricane</a>
+        <a href="" class="expandHome">Flood</a>
+        <a href="" class="expandHome">About</a>
+      </div>
+    </nav>
+
+    <script>
+      function onButton() {
+        showRecentButton.style.display = "none";
+        showLocationButton.style.display = "block";
+        mostRecent.style.display = "none";
+        fetchIt.style.display = "block";
+      }
+      function offButton() {
+        showRecentButton.style.display = "block";
+        showLocationButton.style.display = "none";
+        mostRecent.style.display = "block";
+        fetchIt.style.display = "none";
+      }
+      off.addEventListener("click", onButton);
+      on.addEventListener("click", offButton);
+    </script>
+    <script src="recentQuakes.js"></script>
+    <script src="localQuakes.js"></script>
+    <script src="search.js"></script>
+  </body>
+</html>

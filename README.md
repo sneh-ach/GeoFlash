@@ -24,13 +24,6 @@ Our website provides information about the most recent disasters in the United S
 
 We spent a long time brainstorming ways to approach the challenge provided. We used HTML5 Browser Location API and JavaScript to pull data from USGS’ Earthquake API. We used CSS and HTML to build and render the elements on the web pages, to create an interface as user-friendly as possible.
 
-<h1>Challenges we ran into</h1>
-
-Our front-end developer couldn’t check in to the event with us, because of the capacity restrictions of the venue, so most of our first day was spent researching about front-end development, and attempting to recover from this major setback.
-
-<h1>Accomplishments that we're proud of</h1>
-
-Despite the fact that we didn’t have our front-end developer, we managed to create a working webpage, within 24 hours, without much proficiency in HTML and CSS.
 
 <h1>What we learned</h1>
 

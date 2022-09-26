@@ -6,7 +6,7 @@ This simple site allows you to view global earthquakes in the past 24 hours, or 
 
 [Location API Docs](https://developer.mozilla.org/en-US/docs/Web/API/Geolocation_API)
 
-Inspiration
+<h1>Inspiration<h1>
 
 Our inspiration for this project was our previous experiences with natural disasters, and our desire to help the people who face these disasters more often by providing them with information about nearby incidents, so that they can take precautionary measures.
 

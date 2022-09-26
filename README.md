@@ -6,6 +6,12 @@ This simple site allows you to view global earthquakes in the past 24 hours, or 
 
 [Location API Docs](https://developer.mozilla.org/en-US/docs/Web/API/Geolocation_API)
 
+
+<img width="1440" alt="Earthquake_near" src="https://user-images.githubusercontent.com/60751508/192332731-6098f2b9-fc77-4de9-8e2d-9a712d99212b.png">
+<img width="1440" alt="Quakelist_global" src="https://user-images.githubusercontent.com/60751508/192332760-ac1f06fa-3240-4c40-a618-5465f88b027a.png">
+<img width="1440" alt="Quakelist_local" src="https://user-images.githubusercontent.com/60751508/192332781-3ec0e0bc-7855-47f8-8a60-dfe2e1c5d611.png">
+
+
 <h1>Inspiration</h1>
 
 Our inspiration for this project was our previous experiences with natural disasters, and our desire to help the people who face these disasters more often by providing them with information about nearby incidents, so that they can take precautionary measures.
